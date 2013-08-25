@@ -10,7 +10,7 @@ There are two methods available, file-based where the two parts communicate via 
 *Usage* 
 
 1. Clone
-2. Build
-2.1 If you want to use push-notifications via the ServiceBus  you have to provide your Notification Hub name as well as listen/send secrets.
-3. Install the application, run, and configure
-4. Install Outlook addin
+2. If you want to use push-notifications via the ServiceBus  you have to provide your Notification Hub name as well as listen/send secrets.
+3. Build (use the appropriate certificates, associate with the store etc.)
+4. Install the application, run, and configure
+5. Install Outlook addin
