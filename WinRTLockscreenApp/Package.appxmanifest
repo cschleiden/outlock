@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="9373cschleiden.WinRTOutlookLockscreen" Publisher="CN=4A341300-C8AD-435D-A743-FEA40D5E71B2" Version="1.0.0.1" />
+  <Properties>
+    <DisplayName>WinRTOutlookLockscreen</DisplayName>
+    <PublisherDisplayName>cschleiden</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="WinRTOutlookLockscreenApp.App">
+      <VisualElements DisplayName="OutLock" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="Displays outlook unread mail count on lock screen" ForegroundText="light" BackgroundColor="#464646">
+        <LockScreen Notification="badge" BadgeLogo="assets\badge.png" />
+        <DefaultTile ShowName="allLogos" />
+        <SplashScreen Image="Assets\SplashScreen.png" />
+      </VisualElements>
+      <Extensions>
+        <Extension Category="windows.backgroundTasks" EntryPoint="WinRTOutlookLockscreenApp.BackgroundTask">
+          <BackgroundTasks>
+            <Task Type="timer" />
+            <Task Type="pushNotification" />
+          </BackgroundTasks>
+        </Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
