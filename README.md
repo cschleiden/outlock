@@ -1,11 +1,29 @@
 OutLock
 =======
 
-OutLock is an attempt to display the number of unread mails in an Outlook (tm) inbox running on the desktop on the Windows 8 lockscreen. The communication methods between desktop and WinRT applications are limited (on purpose) so this project contains a WinRT app which is responsible for the WinRT background tasks and the lock screen badge and an Outlook (tm) addin which provides the number of unread mails.
+OutLock is an attempt to display the number of unread mails in an Outlook (tm) inbox running on the desktop on the Windows 8 lockscreen. The communication methods between desktop and WinRT applications are limited (on purpose) so this project contains a WinRT app which is responsible for the WinRT background 
+sdf
+as
+fd
+s
+dftasks and the lock screen badge and an Outlook (tm) addin which provides the number of unread mails.
 
 *Approach*
 
-There are two methods available, file-based where the two parts communicate via a local file in the WinRT app's LocalState folder and a push-based one where the Azure Notification Hub is utilized to provide up to date information (the file-based approach is only updated every ~15 min).
+There are two methods available, file-based where the two parts communicate via a local file in the WinRT app's LocalState folder and a pu
+sdf
+as
+df
+as
+df
+asd
+
+asd
+
+asd
+f
+sd
+sh-based one where the Azure Notification Hub is utilized to provide up to date information (the file-based approach is only updated every ~15 min).
 
 *Usage* 
 
