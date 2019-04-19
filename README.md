@@ -14,3 +14,6 @@ There are two methods available, file-based where the two parts communicate via 
 3. Build (use the appropriate certificates, associate with the store etc.)
 4. Install the application, run, and configure
 5. Install Outlook addin
+
+
+asdf
